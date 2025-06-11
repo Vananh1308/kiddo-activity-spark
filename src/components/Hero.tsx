@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Sparkles, Star, Heart } from "lucide-react";
 
@@ -37,19 +36,12 @@ const Hero = () => {
             Indoor & outdoor games, DIY crafts, and adventures tailored to your child's unique interests through our smart quiz system.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="flex justify-center lg:justify-start">
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               Take the Free Quiz Now! 🎯
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-purple-300 text-purple-600 hover:bg-purple-50 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
-            >
-              Watch Demo Video ▶️
             </Button>
           </div>
           
