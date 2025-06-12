@@ -3,6 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
 const CTASection = () => {
+  const handleStartNowClick = () => {
+    window.open('https://edu-dev.famhive.net/', '_blank');
+  };
+
   return (
     <section className="py-20 px-4 bg-gradient-to-r from-purple-600 via-blue-600 to-green-600">
       <div className="container mx-auto text-center">
@@ -23,6 +27,7 @@ const CTASection = () => {
             <Button 
               size="lg"
               className="bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-gray-800 px-10 py-6 text-xl font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+              onClick={handleStartNowClick}
             >
               Start Now - It's Free! 🚀
             </Button>
