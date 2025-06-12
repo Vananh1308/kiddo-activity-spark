@@ -1,20 +1,20 @@
-
 import { Button } from "@/components/ui/button";
 import { Sparkles, Star, Heart } from "lucide-react";
-
 const Hero = () => {
   const handleQuizClick = () => {
     window.open('https://edu-dev.famhive.net/', '_blank');
   };
-
-  return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-16 h-16 bg-yellow-300 rounded-full opacity-20 animate-bounce"></div>
         <div className="absolute top-40 right-20 w-12 h-12 bg-pink-400 rounded-full opacity-30 animate-pulse"></div>
-        <div className="absolute bottom-40 left-20 w-20 h-20 bg-blue-300 rounded-full opacity-25 animate-bounce" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-60 right-40 w-8 h-8 bg-green-400 rounded-full opacity-40 animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-40 left-20 w-20 h-20 bg-blue-300 rounded-full opacity-25 animate-bounce" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute top-60 right-40 w-8 h-8 bg-green-400 rounded-full opacity-40 animate-pulse" style={{
+        animationDelay: '2s'
+      }}></div>
       </div>
 
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
@@ -42,11 +42,7 @@ const Hero = () => {
           </p>
           
           <div className="flex justify-center lg:justify-start">
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              onClick={handleQuizClick}
-            >
+            <Button size="lg" className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105" onClick={handleQuizClick}>
               Take the Free Quiz Now! 🎯
             </Button>
           </div>
@@ -54,7 +50,7 @@ const Hero = () => {
           <div className="flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-500">
             <div className="flex items-center">
               <Star className="w-5 h-5 text-yellow-400 fill-current" />
-              <span className="ml-1">4.9/5 rating</span>
+              
             </div>
             <div className="flex items-center">
               <Heart className="w-5 h-5 text-red-400 fill-current" />
@@ -104,8 +100,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
