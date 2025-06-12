@@ -75,7 +75,7 @@ const Hero = () => {
                   <p className="text-sm font-medium text-green-800">🏠 Indoor Activity</p>
                 </div>
                 <div className="bg-blue-50 p-3 rounded-lg border border-blue-200">
-                  <p className="text-sm font-medium text-blue-800">🏕 Outdoor</p>
+                  <p className="text-sm font-medium text-blue-800">🏕 Outdoor games</p>
                 </div>
                 <div className="bg-purple-50 p-3 rounded-lg border border-purple-200">
                   <p className="text-sm font-medium text-purple-800">🎯 Creative & Educational</p>
