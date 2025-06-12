@@ -1,7 +1,12 @@
+
 import { Button } from "@/components/ui/button";
 import { Sparkles, Star, Heart } from "lucide-react";
 
 const Hero = () => {
+  const handleQuizClick = () => {
+    window.open('https://edu-dev.famhive.net/', '_blank');
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
       {/* Animated Background Elements */}
@@ -40,6 +45,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              onClick={handleQuizClick}
             >
               Take the Free Quiz Now! 🎯
             </Button>
