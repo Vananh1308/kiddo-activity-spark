@@ -20,10 +20,7 @@ const Hero = () => {
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
         {/* Content Side */}
         <div className="text-center lg:text-left space-y-8">
-          <div className="inline-flex items-center bg-gradient-to-r from-orange-100 to-pink-100 px-4 py-2 rounded-full text-orange-600 font-medium text-sm">
-            <Sparkles className="w-4 h-4 mr-2" />
-            Trusted by 10,000+ families
-          </div>
+          
           
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
