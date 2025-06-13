@@ -1,5 +1,6 @@
 
 import { Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -25,8 +26,8 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4 text-yellow-400">Support</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="https://www.freeprivacypolicy.com/live/c2562dec-8863-4fda-ae7f-3d2bdf5ef767" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition-colors">Privacy Policy</a></li>
-              <li><a href="https://www.freeprivacypolicy.com/live/c6ceda92-21ba-464c-8e9d-024078492392" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition-colors">Terms of Use</a></li>
+              <li><Link to="/privacy-policy" className="hover:text-yellow-400 transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-use" className="hover:text-yellow-400 transition-colors">Terms of Use</Link></li>
               <li><a href="#" className="hover:text-yellow-400 transition-colors">Contact</a></li>
               <li><a href="mailto:hello@kiddo.app" className="hover:text-yellow-400 transition-colors">hello@kiddo.app</a></li>
             </ul>

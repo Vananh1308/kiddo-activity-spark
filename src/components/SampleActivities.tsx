@@ -13,7 +13,8 @@ const SampleActivities = () => {
       type: "Indoor",
       emoji: "🏰",
       color: "from-purple-400 to-pink-400",
-      bgColor: "bg-purple-50"
+      bgColor: "bg-gradient-to-br from-purple-100 via-pink-50 to-purple-50",
+      image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=400&h=300&fit=crop"
     },
     {
       title: "Backyard Treasure Hunt",
@@ -23,7 +24,8 @@ const SampleActivities = () => {
       type: "Outdoor",
       emoji: "🗺️",
       color: "from-green-400 to-blue-400",
-      bgColor: "bg-green-50"
+      bgColor: "bg-gradient-to-br from-green-100 via-blue-50 to-green-50",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=300&fit=crop"
     },
     {
       title: "Rainbow Science Experiments",
@@ -33,7 +35,8 @@ const SampleActivities = () => {
       type: "Indoor",
       emoji: "🔬",
       color: "from-yellow-400 to-orange-400",
-      bgColor: "bg-yellow-50"
+      bgColor: "bg-gradient-to-br from-yellow-100 via-orange-50 to-yellow-50",
+      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=300&fit=crop"
     },
     {
       title: "Nature Art Collage",
@@ -43,13 +46,22 @@ const SampleActivities = () => {
       type: "Outdoor",
       emoji: "🍃",
       color: "from-emerald-400 to-green-400",
-      bgColor: "bg-emerald-50"
+      bgColor: "bg-gradient-to-br from-emerald-100 via-green-50 to-emerald-50",
+      image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=400&h=300&fit=crop"
     }
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-r from-yellow-50 to-orange-50">
-      <div className="container mx-auto">
+    <section className="py-20 px-4 bg-gradient-to-r from-yellow-50 to-orange-50 relative overflow-hidden">
+      {/* Playful background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-200 rounded-full opacity-30 animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 bg-pink-200 rounded-full opacity-40 animate-bounce"></div>
+        <div className="absolute bottom-20 left-20 w-24 h-24 bg-blue-200 rounded-full opacity-25 animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-40 right-40 w-12 h-12 bg-green-200 rounded-full opacity-35 animate-bounce" style={{animationDelay: '2s'}}></div>
+      </div>
+      
+      <div className="container mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">
@@ -70,11 +82,20 @@ const SampleActivities = () => {
               className={`${activity.bgColor} border-0 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 group cursor-pointer overflow-hidden`}
             >
               <CardContent className="p-0">
-                <div className={`bg-gradient-to-r ${activity.color} p-6 text-center`}>
-                  <div className="text-6xl mb-2 group-hover:scale-110 transition-transform duration-300">
-                    {activity.emoji}
+                {/* Image header */}
+                <div className="relative h-40 overflow-hidden">
+                  <img 
+                    src={activity.image} 
+                    alt={activity.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className={`absolute inset-0 bg-gradient-to-t ${activity.color} opacity-80`}></div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-6xl group-hover:scale-110 transition-transform duration-300">
+                      {activity.emoji}
+                    </div>
                   </div>
-                  <div className="inline-block bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-white text-sm font-medium">
+                  <div className="absolute top-3 right-3 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-white text-sm font-medium">
                     {activity.age}
                   </div>
                 </div>
