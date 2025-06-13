@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Clock, MapPin } from "lucide-react";
 
@@ -35,7 +34,7 @@ const SampleActivities = () => {
       emoji: "🔬",
       color: "from-yellow-400 to-orange-400",
       bgColor: "bg-gradient-to-br from-yellow-100 via-orange-50 to-yellow-50",
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop"
+      image: "/lovable-uploads/0f2424c8-438d-4528-9d6e-b5dce1cef90c.png"
     },
     {
       title: "Nature Art Collage",
