@@ -1,10 +1,14 @@
+
 import { Button } from "@/components/ui/button";
 import { Sparkles, Star, Heart } from "lucide-react";
+
 const Hero = () => {
   const handleQuizClick = () => {
     window.open('https://edu-dev.famhive.net/', '_blank');
   };
-  return <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+
+  return (
+    <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-16 h-16 bg-yellow-300 rounded-full opacity-20 animate-bounce"></div>
@@ -56,47 +60,33 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Visual Side */}
+        {/* Visual Side - Replaced with activity image */}
         <div className="relative">
-          <div className="relative bg-gradient-to-br from-blue-400 via-purple-400 to-pink-400 rounded-3xl p-8 shadow-2xl">
-            <div className="bg-white rounded-2xl p-6 space-y-4">
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl">🎨</span>
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-800">Craft Time!</h3>
-                  <p className="text-sm text-gray-600">Perfect for Emma, age 7</p>
-                </div>
-              </div>
-              
-              <div className="space-y-3">
-                <div className="bg-green-50 p-3 rounded-lg border border-green-200">
-                  <p className="text-sm font-medium text-green-800">🏠 Indoor Activity</p>
-                </div>
-                <div className="bg-blue-50 p-3 rounded-lg border border-blue-200">
-                  <p className="text-sm font-medium text-blue-800">🏕 Outdoor games</p>
-                </div>
-                <div className="bg-purple-50 p-3 rounded-lg border border-purple-200">
-                  <p className="text-sm font-medium text-purple-800">🎯 Creative & Educational</p>
-                </div>
-              </div>
-              
-              <Button className="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-xl">
-                Start Creating! ✨
-              </Button>
-            </div>
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            <img 
+              src="/lovable-uploads/93aeb01f-a49e-49db-a13b-6ba9f0554ff9.png" 
+              alt="Kids playing with colorful parachute - fun outdoor activity" 
+              className="w-full h-auto rounded-3xl transform hover:scale-105 transition-transform duration-500"
+            />
             
-            {/* Floating activity cards */}
+            {/* Floating activity icons with animations */}
             <div className="absolute -top-4 -right-4 bg-yellow-300 p-3 rounded-xl shadow-lg animate-bounce">
-              <span className="text-2xl">🏃‍♂️</span>
+              <span className="text-2xl">🎨</span>
             </div>
             <div className="absolute -bottom-4 -left-4 bg-pink-300 p-3 rounded-xl shadow-lg animate-pulse">
-              <span className="text-2xl">🔬</span>
+              <span className="text-2xl">🎯</span>
+            </div>
+            <div className="absolute top-1/4 -left-3 bg-green-300 p-2 rounded-lg shadow-lg animate-bounce" style={{animationDelay: '1s'}}>
+              <span className="text-xl">⚽</span>
+            </div>
+            <div className="absolute bottom-1/4 -right-3 bg-blue-300 p-2 rounded-lg shadow-lg animate-pulse" style={{animationDelay: '1.5s'}}>
+              <span className="text-xl">🏃‍♂️</span>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
