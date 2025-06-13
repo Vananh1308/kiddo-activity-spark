@@ -13,18 +13,18 @@ const SampleActivities = () => {
       emoji: "🏰",
       color: "from-purple-400 to-pink-400",
       bgColor: "bg-gradient-to-br from-purple-100 via-pink-50 to-purple-50",
-      image: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=400&h=300&fit=crop"
+      image: "/lovable-uploads/57e94d2f-00e7-42d9-93e9-0e40e29d9f8c.png"
     },
     {
-      title: "Backyard Treasure Hunt",
-      description: "Follow clues and solve riddles in an exciting outdoor adventure that builds problem-solving skills.",
-      age: "Ages 8-10",
-      duration: "60 min",
+      title: "Sack Race Adventure",
+      description: "Hop, jump, and laugh in this classic outdoor game that builds coordination and teamwork.",
+      age: "Ages 6-10",
+      duration: "30 min",
       type: "Outdoor",
-      emoji: "🗺️",
+      emoji: "🏃‍♂️",
       color: "from-green-400 to-blue-400",
       bgColor: "bg-gradient-to-br from-green-100 via-blue-50 to-green-50",
-      image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=300&fit=crop"
+      image: "/lovable-uploads/9137c093-7714-489e-863a-1f681f6d2303.png"
     },
     {
       title: "Rainbow Science Experiments",
@@ -49,15 +49,15 @@ const SampleActivities = () => {
       image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=300&fit=crop"
     },
     {
-      title: "Kitchen Science Lab",
-      description: "Transform your kitchen into a laboratory with fun experiments using everyday ingredients.",
-      age: "Ages 7-10",
+      title: "Water Bucket Challenge",
+      description: "Cool summer fun with exciting water games that promote teamwork and coordination.",
+      age: "Ages 5-10",
       duration: "35 min",
-      type: "Indoor",
-      emoji: "🧪",
+      type: "Outdoor",
+      emoji: "💧",
       color: "from-blue-400 to-purple-400",
       bgColor: "bg-gradient-to-br from-blue-100 via-purple-50 to-blue-50",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+      image: "/lovable-uploads/8e4231c0-9425-4882-8a29-f1ec069ca7f3.png"
     },
     {
       title: "Garden Adventure",
@@ -82,15 +82,15 @@ const SampleActivities = () => {
       image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop"
     },
     {
-      title: "Water Balloon Games",
-      description: "Cool off with exciting water balloon activities that promote teamwork and fun.",
+      title: "Colorful Parachute Play",
+      description: "Work together with colorful parachutes in this exciting group activity full of teamwork and fun.",
       age: "Ages 4-10",
       duration: "30 min",
       type: "Outdoor",
-      emoji: "💧",
+      emoji: "🎪",
       color: "from-cyan-400 to-blue-400",
       bgColor: "bg-gradient-to-br from-cyan-100 via-blue-50 to-cyan-50",
-      image: "https://images.unsplash.com/photo-1549490349-8643362247b5?w=400&h=300&fit=crop"
+      image: "/lovable-uploads/cf36f7c8-84bf-4af1-8db9-517b9e4f0601.png"
     }
   ];
 
