@@ -1,6 +1,5 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Clock, MapPin } from "lucide-react";
 
 const SampleActivities = () => {
@@ -14,7 +13,7 @@ const SampleActivities = () => {
       emoji: "🏰",
       color: "from-purple-400 to-pink-400",
       bgColor: "bg-gradient-to-br from-purple-100 via-pink-50 to-purple-50",
-      image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=400&h=300&fit=crop"
     },
     {
       title: "Backyard Treasure Hunt",
@@ -25,7 +24,7 @@ const SampleActivities = () => {
       emoji: "🗺️",
       color: "from-green-400 to-blue-400",
       bgColor: "bg-gradient-to-br from-green-100 via-blue-50 to-green-50",
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=300&fit=crop"
     },
     {
       title: "Rainbow Science Experiments",
@@ -36,7 +35,7 @@ const SampleActivities = () => {
       emoji: "🔬",
       color: "from-yellow-400 to-orange-400",
       bgColor: "bg-gradient-to-br from-yellow-100 via-orange-50 to-yellow-50",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop"
     },
     {
       title: "Nature Art Collage",
@@ -47,18 +46,77 @@ const SampleActivities = () => {
       emoji: "🍃",
       color: "from-emerald-400 to-green-400",
       bgColor: "bg-gradient-to-br from-emerald-100 via-green-50 to-emerald-50",
-      image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=300&fit=crop"
+    },
+    {
+      title: "Kitchen Science Lab",
+      description: "Transform your kitchen into a laboratory with fun experiments using everyday ingredients.",
+      age: "Ages 7-10",
+      duration: "35 min",
+      type: "Indoor",
+      emoji: "🧪",
+      color: "from-blue-400 to-purple-400",
+      bgColor: "bg-gradient-to-br from-blue-100 via-purple-50 to-blue-50",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+    },
+    {
+      title: "Garden Adventure",
+      description: "Plant seeds, water flowers, and discover the magic of growing your own garden.",
+      age: "Ages 5-9",
+      duration: "50 min",
+      type: "Outdoor",
+      emoji: "🌱",
+      color: "from-green-400 to-yellow-400",
+      bgColor: "bg-gradient-to-br from-green-100 via-yellow-50 to-green-50",
+      image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop"
+    },
+    {
+      title: "DIY Slime Workshop",
+      description: "Create colorful, stretchy slime with safe ingredients and learn about polymers.",
+      age: "Ages 6-11",
+      duration: "25 min",
+      type: "Indoor",
+      emoji: "🟢",
+      color: "from-pink-400 to-red-400",
+      bgColor: "bg-gradient-to-br from-pink-100 via-red-50 to-pink-50",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop"
+    },
+    {
+      title: "Water Balloon Games",
+      description: "Cool off with exciting water balloon activities that promote teamwork and fun.",
+      age: "Ages 4-10",
+      duration: "30 min",
+      type: "Outdoor",
+      emoji: "💧",
+      color: "from-cyan-400 to-blue-400",
+      bgColor: "bg-gradient-to-br from-cyan-100 via-blue-50 to-cyan-50",
+      image: "https://images.unsplash.com/photo-1549490349-8643362247b5?w=400&h=300&fit=crop"
     }
   ];
 
   return (
     <section className="py-20 px-4 bg-gradient-to-r from-yellow-50 to-orange-50 relative overflow-hidden">
-      {/* Playful background elements */}
+      {/* Enhanced playful background elements with kid activity themes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Floating activity icons */}
+        <div className="absolute top-10 left-10 text-4xl animate-bounce" style={{animationDelay: '0s'}}>🎨</div>
+        <div className="absolute top-20 right-20 text-3xl animate-pulse" style={{animationDelay: '1s'}}>⚽</div>
+        <div className="absolute top-40 left-1/4 text-3xl animate-bounce" style={{animationDelay: '2s'}}>🧩</div>
+        <div className="absolute top-60 right-1/3 text-4xl animate-pulse" style={{animationDelay: '1.5s'}}>🎭</div>
+        <div className="absolute bottom-40 left-20 text-3xl animate-bounce" style={{animationDelay: '0.5s'}}>🏃‍♀️</div>
+        <div className="absolute bottom-60 right-40 text-4xl animate-pulse" style={{animationDelay: '2.5s'}}>🎪</div>
+        <div className="absolute bottom-20 left-1/3 text-3xl animate-bounce" style={{animationDelay: '3s'}}>🎯</div>
+        
+        {/* Colorful geometric shapes */}
         <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-200 rounded-full opacity-30 animate-pulse"></div>
         <div className="absolute top-40 right-20 w-16 h-16 bg-pink-200 rounded-full opacity-40 animate-bounce"></div>
         <div className="absolute bottom-20 left-20 w-24 h-24 bg-blue-200 rounded-full opacity-25 animate-pulse" style={{animationDelay: '1s'}}></div>
         <div className="absolute bottom-40 right-40 w-12 h-12 bg-green-200 rounded-full opacity-35 animate-bounce" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/3 left-1/2 w-18 h-18 bg-purple-200 rounded-full opacity-30 animate-pulse" style={{animationDelay: '1.5s'}}></div>
+        
+        {/* Kid-themed decorative elements */}
+        <div className="absolute top-32 right-1/4 w-8 h-8 bg-orange-300 rotate-45 opacity-40 animate-spin" style={{animationDuration: '4s'}}></div>
+        <div className="absolute bottom-32 left-1/4 w-6 h-6 bg-red-300 rounded-full opacity-35 animate-ping" style={{animationDelay: '2s'}}></div>
       </div>
       
       <div className="container mx-auto relative z-10">
@@ -108,7 +166,7 @@ const SampleActivities = () => {
                     {activity.description}
                   </p>
                   
-                  <div className="flex items-center justify-between text-xs text-gray-500 mb-4">
+                  <div className="flex items-center justify-between text-xs text-gray-500">
                     <div className="flex items-center">
                       <Clock className="w-4 h-4 mr-1" />
                       {activity.duration}
@@ -118,13 +176,6 @@ const SampleActivities = () => {
                       {activity.type}
                     </div>
                   </div>
-                  
-                  <Button 
-                    size="sm" 
-                    className="w-full bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white rounded-lg transition-all duration-300"
-                  >
-                    Try This Activity! ✨
-                  </Button>
                 </div>
               </CardContent>
             </Card>
