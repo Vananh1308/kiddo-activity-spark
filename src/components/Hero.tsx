@@ -4,7 +4,7 @@ import { Sparkles, Star, Heart } from "lucide-react";
 
 const Hero = () => {
   const handleQuizClick = () => {
-    window.open('https://edu-dev.famhive.net/', '_blank');
+    window.open('https://app.kiddo.education/', '_blank');
   };
 
   return (

@@ -4,7 +4,11 @@ import { Download } from "lucide-react";
 
 const CTASection = () => {
   const handleStartNowClick = () => {
-    window.open('https://edu-dev.famhive.net/', '_blank');
+    window.open('https://app.kiddo.education/', '_blank');
+  };
+
+  const handleAppStoreClick = () => {
+    window.open('https://apps.apple.com/us/app/kiddo-kid-activity-ideas/id6746712255', '_blank');
   };
 
   return (
@@ -35,7 +39,7 @@ const CTASection = () => {
           
           <div className="flex flex-col items-center justify-center gap-6">
             <p className="text-white font-medium">Download KidDo:</p>
-            <Button className="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-lg flex items-center space-x-3">
+            <Button className="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-lg flex items-center space-x-3" onClick={handleAppStoreClick}>
               <Download className="w-5 h-5" />
               <div className="text-left">
                 <div className="text-xs">Download on the</div>
