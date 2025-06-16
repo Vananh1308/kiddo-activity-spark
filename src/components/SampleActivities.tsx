@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Clock, MapPin } from "lucide-react";
 
@@ -94,45 +95,45 @@ const SampleActivities = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-r from-yellow-50 to-orange-50 relative overflow-hidden">
+    <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-yellow-50 to-orange-50 relative overflow-hidden">
       {/* Enhanced playful background elements with kid activity themes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Floating activity icons */}
-        <div className="absolute top-10 left-10 text-4xl animate-bounce" style={{animationDelay: '0s'}}>🎨</div>
-        <div className="absolute top-20 right-20 text-3xl animate-pulse" style={{animationDelay: '1s'}}>⚽</div>
-        <div className="absolute top-40 left-1/4 text-3xl animate-bounce" style={{animationDelay: '2s'}}>🧩</div>
-        <div className="absolute top-60 right-1/3 text-4xl animate-pulse" style={{animationDelay: '1.5s'}}>🎭</div>
-        <div className="absolute bottom-40 left-20 text-3xl animate-bounce" style={{animationDelay: '0.5s'}}>🏃‍♀️</div>
-        <div className="absolute bottom-60 right-40 text-4xl animate-pulse" style={{animationDelay: '2.5s'}}>🎪</div>
-        <div className="absolute bottom-20 left-1/3 text-3xl animate-bounce" style={{animationDelay: '3s'}}>🎯</div>
+        <div className="absolute top-10 left-4 sm:left-10 text-2xl sm:text-4xl animate-bounce" style={{animationDelay: '0s'}}>🎨</div>
+        <div className="absolute top-20 right-8 sm:right-20 text-xl sm:text-3xl animate-pulse" style={{animationDelay: '1s'}}>⚽</div>
+        <div className="absolute top-40 left-1/4 text-xl sm:text-3xl animate-bounce" style={{animationDelay: '2s'}}>🧩</div>
+        <div className="absolute top-60 right-1/3 text-2xl sm:text-4xl animate-pulse" style={{animationDelay: '1.5s'}}>🎭</div>
+        <div className="absolute bottom-40 left-8 sm:left-20 text-xl sm:text-3xl animate-bounce" style={{animationDelay: '0.5s'}}>🏃‍♀️</div>
+        <div className="absolute bottom-60 right-16 sm:right-40 text-2xl sm:text-4xl animate-pulse" style={{animationDelay: '2.5s'}}>🎪</div>
+        <div className="absolute bottom-20 left-1/3 text-xl sm:text-3xl animate-bounce" style={{animationDelay: '3s'}}>🎯</div>
         
         {/* Colorful geometric shapes */}
-        <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-200 rounded-full opacity-30 animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 bg-pink-200 rounded-full opacity-40 animate-bounce"></div>
-        <div className="absolute bottom-20 left-20 w-24 h-24 bg-blue-200 rounded-full opacity-25 animate-pulse" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-40 right-40 w-12 h-12 bg-green-200 rounded-full opacity-35 animate-bounce" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/3 left-1/2 w-18 h-18 bg-purple-200 rounded-full opacity-30 animate-pulse" style={{animationDelay: '1.5s'}}></div>
+        <div className="absolute top-10 left-10 w-12 h-12 sm:w-20 sm:h-20 bg-yellow-200 rounded-full opacity-30 animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-10 h-10 sm:w-16 sm:h-16 bg-pink-200 rounded-full opacity-40 animate-bounce"></div>
+        <div className="absolute bottom-20 left-20 w-16 h-16 sm:w-24 sm:h-24 bg-blue-200 rounded-full opacity-25 animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-40 right-40 w-8 h-8 sm:w-12 sm:h-12 bg-green-200 rounded-full opacity-35 animate-bounce" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/3 left-1/2 w-12 h-12 sm:w-18 sm:h-18 bg-purple-200 rounded-full opacity-30 animate-pulse" style={{animationDelay: '1.5s'}}></div>
         
         {/* Kid-themed decorative elements */}
-        <div className="absolute top-32 right-1/4 w-8 h-8 bg-orange-300 rotate-45 opacity-40 animate-spin" style={{animationDuration: '4s'}}></div>
-        <div className="absolute bottom-32 left-1/4 w-6 h-6 bg-red-300 rounded-full opacity-35 animate-ping" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-32 right-1/4 w-6 h-6 sm:w-8 sm:h-8 bg-orange-300 rotate-45 opacity-40 animate-spin" style={{animationDuration: '4s'}}></div>
+        <div className="absolute bottom-32 left-1/4 w-4 h-4 sm:w-6 sm:h-6 bg-red-300 rounded-full opacity-35 animate-ping" style={{animationDelay: '2s'}}></div>
       </div>
       
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
             <span className="bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">
               Explore Fun Activities
             </span>
             <br />
             <span className="text-green-600">with KidDo!</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             Every activity is crafted to inspire creativity, build skills, and create lasting memories
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
           {activities.map((activity, index) => (
             <Card 
               key={index}
@@ -140,7 +141,7 @@ const SampleActivities = () => {
             >
               <CardContent className="p-0">
                 {/* Image header */}
-                <div className="relative h-40 overflow-hidden">
+                <div className="relative h-32 sm:h-40 overflow-hidden">
                   <img 
                     src={activity.image} 
                     alt={activity.title}
@@ -148,30 +149,30 @@ const SampleActivities = () => {
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${activity.color} opacity-80`}></div>
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-6xl group-hover:scale-110 transition-transform duration-300">
+                    <div className="text-4xl sm:text-6xl group-hover:scale-110 transition-transform duration-300">
                       {activity.emoji}
                     </div>
                   </div>
-                  <div className="absolute top-3 right-3 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-white text-sm font-medium">
+                  <div className="absolute top-2 sm:top-3 right-2 sm:right-3 bg-white/20 backdrop-blur-sm px-2 sm:px-3 py-1 rounded-full text-white text-xs sm:text-sm font-medium">
                     {activity.age}
                   </div>
                 </div>
                 
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-purple-600 transition-colors">
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3 group-hover:text-purple-600 transition-colors">
                     {activity.title}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                  <p className="text-gray-600 text-sm leading-relaxed mb-3 sm:mb-4">
                     {activity.description}
                   </p>
                   
                   <div className="flex items-center justify-between text-xs text-gray-500">
                     <div className="flex items-center">
-                      <Clock className="w-4 h-4 mr-1" />
+                      <Clock className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                       {activity.duration}
                     </div>
                     <div className="flex items-center">
-                      <MapPin className="w-4 h-4 mr-1" />
+                      <MapPin className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                       {activity.type}
                     </div>
                   </div>

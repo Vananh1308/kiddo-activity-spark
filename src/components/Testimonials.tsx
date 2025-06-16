@@ -39,43 +39,43 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
             <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
               Why Parents and Kids
             </span>
             <br />
             <span className="text-purple-600">Love KidDo!</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">
             Join thousands of families creating magical memories together
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index}
               className={`bg-gradient-to-br ${testimonial.bgColor} border-0 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group`}
             >
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex items-center mb-3 sm:mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                    <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
                 
-                <p className="text-gray-700 mb-6 leading-relaxed italic">
+                <p className="text-gray-700 mb-4 sm:mb-6 leading-relaxed italic text-sm sm:text-base">
                   "{testimonial.content}"
                 </p>
                 
                 <div className="flex items-center">
-                  <div className="text-3xl mr-3">{testimonial.avatar}</div>
+                  <div className="text-2xl sm:text-3xl mr-2 sm:mr-3">{testimonial.avatar}</div>
                   <div>
-                    <h4 className="font-bold text-gray-800">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-600">{testimonial.role}</p>
+                    <h4 className="font-bold text-gray-800 text-sm sm:text-base">{testimonial.name}</h4>
+                    <p className="text-xs sm:text-sm text-gray-600">{testimonial.role}</p>
                   </div>
                 </div>
               </CardContent>
